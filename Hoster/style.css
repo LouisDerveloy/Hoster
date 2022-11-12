@@ -459,21 +459,29 @@ h2 {
     color: white;
 }
 
-.pricingPlans-plans {
+.pricingPlans-plansContainer {
+    --transition-easeing: cubic-bezier(0.63, 0.62, 0.24, 0.98);
+    position: relative;
+    margin-top: 2.3rem;
     width: 80%;
+}
+
+.pricingPlans-plans {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2.3rem;
 }
 
 .pricingPlans-plans-card {
     --special-color: #D4088C;
+    --card-background: transparent;
+    --card-border: 0.5px solid rgba(255, 255, 255, 0.4);
 
-    width: 30%;
+    background: var(--card-background);
+    width: 28%;
     display: grid;
-    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border: var(--card-border);
     border-radius: 2rem;
     padding: 2.8rem 1.5rem;
     grid-template-columns: repeat(2, 50%);
@@ -486,8 +494,9 @@ h2 {
     font-size: 22px;
     line-height: 32px;
     opacity: 0.6;
+    margin-bottom: 1.8rem;
 
-    grid-column: 1/2;
+    grid-column: 1/3;
     grid-row: 1/2;
 }
 
@@ -512,6 +521,7 @@ h2 {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    margin-left: 1rem;
 
     grid-column: 2/3;
     grid-row: 2/3;
@@ -598,8 +608,34 @@ h2 {
     text-align: center;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
 
     grid-column: 1/3;
     grid-row: 5/6;
+}
+
+#princingPlans-monthly {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 300ms;
+    transition-timing-function: var(--transition-easeing);
+}
+
+.yearly #princingPlans-monthly {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+#princingPlans-yearly {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 300ms;
+    transition-timing-function: var(--transition-easeing);
+}
+
+.yearly #princingPlans-yearly {
+    transform: translateX(0%);
+    opacity: 1;
 }

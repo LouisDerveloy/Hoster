@@ -912,144 +912,268 @@
             <button class="pricingPlans-selector-button-shape pricingPlans-selector-button pricingPlans-selector-button-monthly" onclick="princingPlans.classList.remove('yearly')">Monthly</button>
             <button class="pricingPlans-selector-button-shape pricingPlans-selector-button pricingPlans-selector-button-yearly" onclick="princingPlans.classList.add('yearly')">Yearly</button>
         </div>
-        <div class="pricingPlans-plans">
-            <div class="pricingPlans-plans-card">
-                <span class="pricingPlans-plans-card-title">Wordpress Hosting</span>
-                <div class="pricingPlans-plans-card-price">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
-                    </svg>
-                    <span>99/Mo</span>
-                </div>
-                <div class="pricingPlans-plans-card-priceAdvantage">
-                    <div>
-                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+        <div class="pricingPlans-plansContainer">
+            <div class="pricingPlans-plans" id="princingPlans-monthly">
+                <div class="pricingPlans-plans-card">
+                    <span class="pricingPlans-plans-card-title">Wordpress Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
                         </svg>
-                        <span>149</span>
+                        <span>99/Mo</span>
                     </div>
-                    <span>Save 50%</span>
+                    <div class="pricingPlans-plans-card-priceAdvantage">
+                        <div>
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+                            </svg>
+                            <span>199</span>
+                        </div>
+                        <span>Save 50%</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">All inclusive WordPress Hosting with 24/7 live support and pre-installed WP, theme and plugins.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Preinstalled WordPress</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Preinstalled Themes/Plugins</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Free Migration Assistance</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>WP Optimized Environment</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>30 Days Money Back</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
                 </div>
-                <p class="pricingPlans-plans-card-decsription">All inclusive WordPress Hosting with 24/7 live support and pre-installed WP, theme and plugins.</p>
-                <ul class="pricingPlans-plans-card-advantage">
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled WordPress</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled Themes/Plugins</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Free Migration Assistance</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>WP Optimized Environment</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>30 Days Money Back</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>24x7 Support</span>
-                    </li>
-                </ul>
-                <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
+                <div class="pricingPlans-plans-card" style="--special-color: #6EE8FC; --card-background: var(--bg-gradient); --card-border: transparent;">
+                    <span class="pricingPlans-plans-card-title">Shared Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
+                        </svg>
+                        <span>125/Mo</span>
+                    </div>
+                    <div class="pricingPlans-plans-card-priceAdvantage">
+                        <div>
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+                            </svg>
+                            <span>149</span>
+                        </div>
+                        <span>Save 16%</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">Host multiple websites over our feature-rich shared hosting delivering 99.95% Uptime.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Free Domain</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Host Multiple Websites</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Unmetered Bandwith</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Daily Backup</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>99.95% Uptime</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn" style="--bg-gradient: linear-gradient(161.42deg, #6EE8FC 5.47%, #6AE2FB 21.27%, #5ED1F7 42.01%, #4BB5F1 65.72%, #308EE8 91.39%, #267FE5 100.28%); ">Choose Plan</a>
+                </div>
+                <div class="pricingPlans-plans-card">
+                    <span class="pricingPlans-plans-card-title">VPS Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
+                        </svg>
+                        <span>999/Mo</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">With private server environment, experience performance & reliability of managed hosting.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>SSD Strorage</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Guaranteed CPU & Ram</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>cPanel/Plesk (Optional)</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>SSH/RGP Access</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>30 Days Money Back</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
+                </div>
             </div>
-            <div class="pricingPlans-plans-card">
-                <span class="pricingPlans-plans-card-title">Wordpress Hosting</span>
-                <div class="pricingPlans-plans-card-price">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
-                    </svg>
-                    <span>99/Mo</span>
-                </div>
-                <div class="pricingPlans-plans-card-priceAdvantage">
-                    <div>
-                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+            <div class="pricingPlans-plans" id="princingPlans-yearly">
+                <div class="pricingPlans-plans-card">
+                    <span class="pricingPlans-plans-card-title">Wordpress Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
                         </svg>
-                        <span>149</span>
+                        <span>999/Yr</span>
                     </div>
-                    <span>Save 50%</span>
+                    <div class="pricingPlans-plans-card-priceAdvantage">
+                        <div>
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+                            </svg>
+                            <span>1,188</span>
+                        </div>
+                        <span>Save 20%</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">All inclusive WordPress Hosting with 24/7 live support and pre-installed WP, theme and plugins.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Preinstalled WordPress</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Preinstalled Themes/Plugins</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Free Migration Assistance</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>WP Optimized Environment</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>30 Days Money Back</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
                 </div>
-                <p class="pricingPlans-plans-card-decsription">All inclusive WordPress Hosting with 24/7 live support and pre-installed WP, theme and plugins.</p>
-                <ul class="pricingPlans-plans-card-advantage">
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled WordPress</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled Themes/Plugins</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Free Migration Assistance</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>WP Optimized Environment</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>30 Days Money Back</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>24x7 Support</span>
-                    </li>
-                </ul>
-                <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
-            </div>
-            <div class="pricingPlans-plans-card">
-                <span class="pricingPlans-plans-card-title">Wordpress Hosting</span>
-                <div class="pricingPlans-plans-card-price">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
-                    </svg>
-                    <span>99/Mo</span>
-                </div>
-                <div class="pricingPlans-plans-card-priceAdvantage">
-                    <div>
-                        <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+                <div class="pricingPlans-plans-card" style="--special-color: #6EE8FC; --card-background: var(--bg-gradient); --card-border: transparent;">
+                    <span class="pricingPlans-plans-card-title">Shared Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
                         </svg>
-                        <span>149</span>
+                        <span>1,100/Yr</span>
                     </div>
-                    <span>Save 50%</span>
+                    <div class="pricingPlans-plans-card-priceAdvantage">
+                        <div>
+                            <svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.25 1.25125H3.14637C4.44263 1.25125 5.39887 1.86219 5.61669 3.083H0.25V4.19969H5.61669C5.40844 5.43856 4.5 6.03038 3.21225 6.03038H0.25V7.42969L4.96431 12.875H7.20619L2.47594 7.43925H3.38437C5.84512 7.42013 7.06594 5.871 7.30287 4.19969H8.75V3.083H7.32094C7.23594 2.25637 6.94163 1.66456 6.47838 1.24275H8.75V0.125H0.25V1.25125Z" fill="white" />
+                            </svg>
+                            <span>1,500</span>
+                        </div>
+                        <span>Save 30%</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">Host multiple websites over our feature-rich shared hosting delivering 99.95% Uptime.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Free Domain</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Host Multiple Websites</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Unmetered Bandwith</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Daily Backup</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>99.95% Uptime</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn" style="--bg-gradient: linear-gradient(161.42deg, #6EE8FC 5.47%, #6AE2FB 21.27%, #5ED1F7 42.01%, #4BB5F1 65.72%, #308EE8 91.39%, #267FE5 100.28%); ">Choose Plan</a>
                 </div>
-                <p class="pricingPlans-plans-card-decsription">All inclusive WordPress Hosting with 24/7 live support and pre-installed WP, theme and plugins.</p>
-                <ul class="pricingPlans-plans-card-advantage">
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled WordPress</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Preinstalled Themes/Plugins</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>Free Migration Assistance</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>WP Optimized Environment</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>30 Days Money Back</span>
-                    </li>
-                    <li>
-                        <img src="assets/check_icon.svg" alt="List point." />
-                        <span>24x7 Support</span>
-                    </li>
-                </ul>
-                <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
+                <div class="pricingPlans-plans-card">
+                    <span class="pricingPlans-plans-card-title">VPS Hosting</span>
+                    <div class="pricingPlans-plans-card-price">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 9.5625H21.0187C24.8312 9.5625 27.6437 11.3594 28.2844 14.95H12.5V18.2344H28.2844C27.6719 21.8781 25 23.6187 21.2125 23.6187H12.5V27.7344L26.3656 43.75H32.9594L19.0469 27.7625H21.7187C28.9562 27.7062 32.5469 23.15 33.2437 18.2344H37.5V14.95H33.2969C33.0469 12.5187 32.1813 10.7781 30.8188 9.5375H37.5V6.25H12.5V9.5625Z" fill="white" />
+                        </svg>
+                        <span>11,988/Yr</span>
+                    </div>
+                    <p class="pricingPlans-plans-card-decsription">With private server environment, experience performance & reliability of managed hosting.</p>
+                    <ul class="pricingPlans-plans-card-advantage">
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>SSD Strorage</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>Guaranteed CPU & Ram</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>cPanel/Plesk (Optional)</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>SSH/RGP Access</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>30 Days Money Back</span>
+                        </li>
+                        <li>
+                            <img src="assets/check_icon.svg" alt="List point." />
+                            <span>24x7 Support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="pricingPlans-plans-card-btn">Views Plans</a>
+                </div>
             </div>
         </div>
     </section>
