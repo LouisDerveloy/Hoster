@@ -1,0 +1,1 @@
+var princingPlans = document.getElementById("pricingPlans");
