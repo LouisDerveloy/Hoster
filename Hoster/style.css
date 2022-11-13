@@ -905,3 +905,7 @@ h2 {
     font-size: 26px;
     line-height: 31px;
 }
+
+#subscribeNewsLetter {
+    grid-row: 2/4;
+}
