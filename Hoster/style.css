@@ -911,6 +911,7 @@ h2 {
 }
 
 footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -977,4 +978,28 @@ footer {
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
     margin-bottom: 1rem;
+}
+
+.messageBuble {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 73%;
+    left: 93%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: white;
+    transform-origin: center;
+    transition: transform 300ms cubic-bezier(0, 0.89, 0.5, 2.24);
+}
+
+.messageBuble:hover {
+    transform: scale(1.15);
+}
+
+.messageBuble svg {
+    margin: auto;
 }
