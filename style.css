@@ -61,8 +61,13 @@ h2 {
     font-weight: bold;
 }
 
+.section-title {
+    text-align: center;
+    width: 85%;
+}
+
 .navbar {
-    width: 80%;
+    width: var(--section-content-size);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -230,66 +235,6 @@ h2 {
     transform: rotate(308deg);
     top: 50%;
 }
-
-@media (max-width: 1700px) {
-
-    .navbar-navbar-actionBtns {
-        margin-left: 0px;
-    }
-
-    .navbar-navbar-burger {
-        display: block;
-    }
-
-    .burger-active .navbar-navbar-burger:hover {
-        transition-duration: 250ms;
-        transform: scale(1.5);
-    }
-
-    .navbar-navbar {
-        justify-content: space-between;
-    }
-
-    .navbar-navbar-links-container {
-        display: none;
-    }
-
-    .navbar-navbar-links-link {
-        padding: 1rem;
-        transition: transform 300ms cubic-bezier(0, 0.89, 0.5, 2.24);
-    }
-
-    .navbar-navbar-links-link:hover {
-        transform: scale(1.2);
-    }
-
-    .burger-active .navbar-navbar-links-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem 2rem;
-        background: linear-gradient(134.41deg, rgba(3, 9, 29, 0.95) 13.47%, #121F57 55.81%, #03091D 90.93%);
-        z-index: 100;
-        position: fixed;
-        top: 0%;
-        right: 0%;
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .burger-active .navbar-navbar-links-link {
-        z-index: 101;
-    }
-
-    .burger-active .navbar-navbar-burger {
-        position: fixed;
-        top: 5vh;
-        right: 5vw;
-        z-index: 101;
-    }
-}
-
 .header-content {
     width: 80%;
     margin-top: 3.4rem;
@@ -305,6 +250,7 @@ h2 {
     grid-row: 1/9;
 
     margin-left: auto;
+    width: 90%;
 }
 
 .header-content-title {
@@ -481,6 +427,7 @@ h2 {
     height: 115px;
     border-radius: 50%;
     background: linear-gradient(225deg, rgba(212, 8, 140, 0.8) 14.64%, rgba(204, 8, 140, 0.8) 17.47%, rgba(133, 7, 138, 0.8) 47.17%, rgba(89, 6, 137, 0.8) 68.39%, rgba(72, 6, 137, 0.8) 79%) rgba(204, 8, 140, 0.8);
+    margin-bottom: 2rem;
 }
 
 .joinUs-list-item-icon svg {
@@ -507,8 +454,9 @@ h2 {
 }
 
 .pricingPlans-selector {
-    position: relative;
+    position: sticky;
     display: flex;
+    top: 5vh;
     flex-direction: row;
     justify-content: start;
     align-items: center;
@@ -822,6 +770,10 @@ h2 {
     align-items: stretch;
 }
 
+.migration-content > svg {
+    width: 50%;
+}
+
 .migration-content > div {
     width: 40%;
     display: flex;
@@ -1006,6 +958,10 @@ h2 {
     align-items: center;
 }
 
+.getWebsiteLive-content > svg {
+    width: 100%;
+}
+
 .getWebsiteLive-content-startPrice {
     margin-top: 5rem;
     margin-bottom: 1.4rem;
@@ -1110,4 +1066,69 @@ footer {
 
 .messageBuble svg {
     margin: auto;
+}
+
+@media (max-width: 1700px) {
+
+    .navbar-navbar-actionBtns {
+        margin-left: 0px;
+    }
+
+    .navbar-navbar-burger {
+        display: block;
+    }
+
+    .burger-active .navbar-navbar-burger:hover {
+        transition-duration: 250ms;
+        transform: scale(1.5);
+    }
+
+    .navbar-navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-navbar-links-container {
+        display: none;
+    }
+
+    .navbar-navbar-links-link {
+        padding: 1rem;
+        transition: transform 300ms cubic-bezier(0, 0.89, 0.5, 2.24);
+    }
+
+        .navbar-navbar-links-link:hover {
+            transform: scale(1.2);
+        }
+
+    .burger-active .navbar-navbar-links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem;
+        background: linear-gradient(134.41deg, rgba(3, 9, 29, 0.95) 13.47%, #121F57 55.81%, #03091D 90.93%);
+        z-index: 100;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .burger-active .navbar-navbar-links-link {
+        z-index: 101;
+    }
+
+    .burger-active .navbar-navbar-burger {
+        position: fixed;
+        top: 5vh;
+        right: 5vw;
+        z-index: 101;
+    }
+}
+
+@media (max-width: 1500px) {
+    :root {
+        --section-content-size: 90%;
+    }
 }
