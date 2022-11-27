@@ -1179,7 +1179,17 @@ footer {
     }
 
     .navbar-navbar-actionBtns {
-        margin-top: 2rem;
+        margin-top: 0.8rem;
+        padding-top: 2rem;
+        border-top: var(--text-color) solid 1px;
+    }
+
+    .navbar-navbar-actionBtns-actionBtn {
+        margin: 0rem min(1rem, 1vw);
+    }
+
+    .navbar-navbar-actionBtns-actionBtn:last-child {
+        margin-left: inherit;
     }
 
     .navbar-navbar-links-link {
