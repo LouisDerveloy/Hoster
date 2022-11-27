@@ -160,8 +160,15 @@ h2 {
     margin-left: 15px;
 }
 
+.navbar-navbar-trigger {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: stretch;
+}
+
 .navbar-navbar-links {
-    height: 100%;
     margin-left: auto;
     display: flex;
     flex-direction: row;
@@ -246,7 +253,7 @@ h2 {
     margin-top: 3.4rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(8 auto);
+    grid-template-rows: repeat(8, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -270,9 +277,8 @@ h2 {
     grid-column: 1/2;
     grid-row: 4/5;
     margin: 0px;
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 32px;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 .header-content-buttons {
@@ -288,6 +294,10 @@ h2 {
     padding: 10px 24px;
     border-radius: 3rem;
     text-align: center;
+
+    outline: solid 1px transparent;
+    outline-offset: -1px;
+    transition: outline-offset 200ms ease-out, outline 100ms ease-out;
 }
 
 .header-content-buttons-btn:first-child {
@@ -298,6 +308,12 @@ h2 {
 .header-content-buttons-btn:last-child {
     margin-left: 15px;
     border: #FFFFFF solid 1px;
+    outline-color: #FFFFFF;
+}
+
+.header-content-buttons-btn:hover {
+    outline-offset: -5px;
+    outline-color: #FFFFFF;
 }
 
 .header-content-soloCircle {
@@ -1142,21 +1158,8 @@ footer {
         justify-content: space-between;
     }
 
-    .navbar-navbar-links-container {
+    .navbar-navbar-trigger {
         display: none;
-    }
-
-    .navbar-navbar-links-link {
-        padding: 1rem;
-        transition: transform 300ms cubic-bezier(0, 0.89, 0.5, 2.24);
-    }
-
-        .navbar-navbar-links-link:hover {
-            transform: scale(1.2);
-        }
-
-    .burger-active .navbar-navbar-links-container {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1168,6 +1171,28 @@ footer {
         right: 0%;
         height: 100vh;
         width: 100vw;
+    }
+
+    .navbar-navbar-links {
+        margin-left: 0px;
+        flex-direction: column;
+    }
+
+    .navbar-navbar-actionBtns {
+        margin-top: 2rem;
+    }
+
+    .navbar-navbar-links-link {
+        padding: 1rem;
+        transition: transform 300ms cubic-bezier(0, 0.89, 0.5, 2.24);
+    }
+
+    .navbar-navbar-links-link:hover {
+        transform: scale(1.2);
+    }
+
+    .burger-active .navbar-navbar-trigger {
+        display: flex;
     }
 
     .burger-active .navbar-navbar-links-link {
@@ -1189,11 +1214,6 @@ footer {
 
     .subtitle {
         font-size: max(1.2vw, 10px);
-    }
-
-    .header-content-subtitle {
-        margin-top: 1rem;
-        margin-bottom: 0.6rem;
     }
 }
 
@@ -1237,8 +1257,8 @@ footer {
     }
 
     .header-content-subtitle {
-        margin-top: .8rem;
-        margin-bottom: .6rem;
+        margin-bottom: 1.2rem;
+        margin-top: .6rem;
     }
 
     footer {
