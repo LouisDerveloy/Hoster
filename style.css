@@ -36,14 +36,13 @@ body {
     background: linear-gradient(134.41deg, rgba(3, 9, 29, 0.95) 13.47%, #121F57 55.81%, #03091D 90.93%);
     background: linear-gradient(134.41deg, rgba(3, 9, 29, 0.95) 13.47%, #121F57 55.81%, #03091D 90.93%);
 
-    width: 100vw;
+    width: 100%;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +80,7 @@ h2 {
 
 .navbar-contact {
     margin-top: 10px;
-    height: 40px;
+    padding: 0.5rem 0rem;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1317,5 +1316,150 @@ footer {
     .whyUs-arguments-argument {
         margin-top: 6rem;
         width: var(--card-width);
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    :root {
+        --section-marginTop: 4rem;
+    }
+
+    .section-title {
+        line-height: 1.3;
+        font-size: 6.5vw;
+    }
+
+    .subtitle {
+        font-size: 3.45vw;
+        
+    }
+
+    h2 {
+        line-height: 1.3;
+        font-size: 7vw;
+    }
+
+    .navbar-contact {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        font-size: 3vw;
+    }
+
+    .navbar-contact-item {
+        width: initial;
+        justify-content: space-between;
+    }
+
+    .navbar-contact svg {
+        height: 10px;
+    }
+
+    .navbar-contact span {
+        margin-left: 0.2rem;
+    }
+
+    .header-content-soloCircle, .header-content-banner {
+        /* Dont need illustration for mobile version */
+        display: none;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+
+    .research {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .research-title {
+        font-size: 6vw;
+    }
+
+    .research-input {
+        width: initial;
+    }
+
+    .research-subtitle {
+        font-size: 3.45vw;
+        line-height: 1.2;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+
+    .research-list {
+        margin-top: 1rem;
+        width: initial;
+        justify-content: space-evenly;
+    }
+
+    .whyUs-arguments {
+        margin-top: 0px;
+    }
+
+    .migration-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .migration-content > div{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .migration-content > div > h3 {
+        font-size: 6vw;
+        color: rgb(199, 199, 199);
+    }
+
+    .migration-content > div > p  {
+        margin-top: 1rem;
+        font-size: 4vw;
+        text-align: justify;
+        color: rgb(190, 190, 190);
+    }
+
+    .migration-content > svg {
+        width: 100%;
+    }
+
+    footer {
+        padding: 5rem 0.8rem;
+    }
+
+    .infos {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 50% 50%;
+    }
+
+    .infos > * {
+        width: initial;
+    }
+
+    .infos-social {
+        grid-column: 1/3;
+    }
+
+    .infos-social > p{
+        line-height: 1.8;
+        margin-top: 0.5rem;
+        text-align: justify;
+    }
+
+    .infos-list {
+        margin-top: 1rem;
+    }
+
+    .messageBuble {
+        width: 50px;
+        height: 50px;
     }
 }
