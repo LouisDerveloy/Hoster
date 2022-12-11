@@ -1138,6 +1138,19 @@ footer {
     margin: auto;
 }
 
+.CrossIn {
+    --delay: 0ms;
+    transform: translateY(30%) rotateX(50deg);
+    opacity: 0;
+    transition: 0.8s cubic-bezier(0.31, 1.04, 0.58, 1);
+    transition-delay: var(--delay);
+}
+
+.CrossIn.CrossIn-active {
+    transform: translate(0%) rotateX(0deg);
+    opacity: 1;
+}
+
 @media (max-width: 1700px) {
 
     .navbar-navbar-actionBtns {
